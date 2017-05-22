@@ -1,0 +1,11 @@
+# These are just files to ignore when commiting to the repo
+# Ignore this if you do not plan on version-controlling your project
+
+# If you are using an IDE that creates files in the repo directory, it is
+# recommended you setup your global git config to ignore those files
+#
+*.pyc
+
+build/
+dist/
+__pycache__
