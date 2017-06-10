@@ -9,10 +9,12 @@ libs_to_install = [
     # All the libs to install to the current virtualenv
     # Use this if your game needs some other python library
     #'pygame',
-    #'pyinstaller',
+    #'PyInstaller==3.1.1',
     #'pillow',
 ]
 
+# TODO: save stdout somewhere and parse out what new things were successfully installed
+# That way we can update dependencies.txt in the same instance of installing
 pip.main(['install'] + libs_to_install)
 
 dependencies_file = os.path.join(os.path.dirname(__file__), 'dependencies.txt')
