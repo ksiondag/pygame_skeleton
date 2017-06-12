@@ -6,8 +6,6 @@ import sys
 
 import pygame
 
-import save_dependencies
-
 def dev_mode():
     return not hasattr(sys, "_MEIPASS")
 
@@ -95,8 +93,4 @@ def main(play, caption='Caption!'):
 
     play()
     pygame.quit()
-
-# Save installed libraries if this isn't the executable version of game
-if dev_mode():
-    save_dependencies.main()
 

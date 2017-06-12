@@ -15,7 +15,6 @@ import sys
 import pygame
 
 import resources
-import save_dependencies
 
     
 def play():
